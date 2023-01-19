@@ -87,7 +87,7 @@
 }
 
 .project{
-    cursor: pointer;
+    cursor: grab;
     transition: transform .2s;
     margin-bottom: 20px;
     height: auto;
