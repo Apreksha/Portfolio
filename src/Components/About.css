@@ -1,0 +1,92 @@
+.name{
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+    background: linear-gradient(#AE8625, #F7EF8A);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.im{
+    font-size: 28px;
+}
+
+.mynameis{
+    display: flex;
+}
+
+.dev{
+    font-size: 30px;
+    margin-top: -30px;
+    text-align: left;
+}
+
+.About{
+    text-align: left;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.skillCard{
+    background-color: grey;
+    height: 130px;
+    border-radius: 20px;
+    padding-top: 20px;
+    transition: transform .2s;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.skillCard:hover{
+    transform: scale(1.05);
+}
+
+.skillCard img{
+    height: 60px;
+    width: 60px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.skillsHeading, .codingProfileHeading{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.aboutHeading{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.codingProfileCard{
+    display: flex;
+    border: 3px solid #D4AF37;
+    background: linear-gradient(#AE8625, #F7EF8A);
+    height: 55px;
+    border-radius: 10px;
+    color: black;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.codingProfileCard img{
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 35px;
+}
+
+.codingProfiles{
+    cursor: pointer;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    column-gap: -10px;
+}

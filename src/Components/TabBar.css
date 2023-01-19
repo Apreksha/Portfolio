@@ -1,0 +1,20 @@
+.tabBar img{
+    height: 70px;
+    width: 70px;
+}
+
+.tabBar{
+    display: flex;
+}
+
+.tabBar p{
+    margin-left: 20px;
+    color: white;
+}
+
+.tabBarButton{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+}
