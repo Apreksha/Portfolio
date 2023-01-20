@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './Portfolio.css';
 import Typewriter from "typewriter-effect";
 import TabBar from './TabBar';
+import Footer from './Footer';
 import {Route, Routes, useNavigate, withRouter, useHistory} from 'react-router-dom';
 import {Link} from 'react-scroll';
 import gfg from 'D:/VSCodeProjects/portfolio/src/image/30GFG.png';
@@ -16,6 +17,7 @@ import dbms from 'D:/VSCodeProjects/portfolio/src/image/dbms.jpg';
 import mi from 'D:/VSCodeProjects/portfolio/src/image/mi.jpg';
 import gyandaan from 'D:/VSCodeProjects/portfolio/src/image/gyandaan.jpeg';
 import github from 'D:/VSCodeProjects/portfolio/src/image/github.png';
+import headingFont from 'D:/VSCodeProjects/portfolio/src/image/blackchancery.ttf';
 
 function Portfolio(){
     const onClickButton = url => {
@@ -46,66 +48,85 @@ function Portfolio(){
     return(
         <div>
             <TabBar/>
-            <p class="portfolioHeading">Portfolio</p>
-            <p class="topicHeading">Education</p>
-            <div class="education">
-                <div class="schools">
-                    <p class="schoolname">Poornima College of Engineering</p>
-                    <p>B.Tech in Computer Engineering</p>
-                    <p>2019 - 2023</p>
-                    <p>CGPA : 9.16</p>
+            <div class="portfolio">
+                <p class="portfolioHeading">PORTFOLIO</p>
+                <p class="topicHeading">Education</p>
+                <div class="education">
+                    <div class="schools">
+                        <p class="schoolname">Poornima College of Engineering</p>
+                        <p>B.Tech in Computer Engineering</p>
+                        <p>2019 - 2023</p>
+                        <p>CGPA : 9.16</p>
+                    </div>
+                    <div class="schools">
+                        <p class="schoolname">Seedling Public School</p>
+                        <p>12th in PCM</p>
+                        <p>2018 - 2019</p>
+                        <p>Percentage : 86.4 %</p>
+                    </div>
                 </div>
-                <div class="schools">
-                    <p class="schoolname">Seedling Public School</p>
-                    <p>12th in PCM</p>
-                    <p>2018 - 2019</p>
-                    <p>Percentage : 86.4 %</p>
-                </div>
-            </div>
-            <p class="topicHeading">Experience</p>
-            <div class="experiences">
-                <div class="experience">
-                    <img height="100px" width="200px" src={lapron}></img>
-                    <p>Flutter Developer Intern
-                    <br></br>
-                    Jul 2021 - Jan 2022
-                    </p>
-                </div>
-                <p class="description">
-                Worked on a Multivendor application.<br></br>
-                Worked on frontend and backend of pages like Product Description, Buying Preferences, Mode of Payment, a module of Home Page.<br></br>
-                Fixed a few bugs.<br></br>
-                <p class="tech">Dart, Flutter, Git, GitHub, Android Studio, API</p></p>
-            </div>
-
-            <p class="topicHeading">Projects</p>
-            <div class="projects">{projectTechUsed.map((item, i) => (
-                <div onClick={() => onClickButton(projectDemoLinks.at(i))} class="project">
-                    <div class="headingGithub">
-                            <p onClick={() => onClickButton(projectDemoLinks.at(i))} class="heading">{projectTitle.at(i)}</p>
-                            <img class="links" onClick={() => onClickButton(projectGithubLinks.at(i))} src={github}></img>
+                <p class="topicHeading">Experience</p>
+                <div class="experiences">
+                    <div class="experience">
+                        <div class="timeline">
+                            <div class="wrapperCircle"></div>
+                            <div class="wrapper"></div>
                         </div>
-                    <img onClick={() => onClickButton(projectDemoLinks.at(i))} class="projectImg" src={projectImg.at(i)}></img>
-                    <div class="projectInfo">
-                        
-                        <div class="desc">{projectInfo.at(i)}</div>
-                        <p class="tech">{projectTechUsed.at(i).map((text) => (
-                            <p>{text}</p>
-                        ))}</p>
-                    </div>        
+                        <div class="experienceCard">
+                            <p class="companyName">Lapron Technology</p>
+                            <div class="positionAndTime">
+                                <p class="position">Flutter Developer Intern</p>
+                                <p class="time">July 2021 - Jan 2022</p>
+                            </div>
+                            <p class="companyInfo">Worked on a Multivendor application. Worked on frontend and backend of pages like Product Description, Buying Preferences, Mode of Payment, a module of Home Page. Fixed a few bugs.</p>
+                            <p class="experienceTech">Dart, Flutter, Git, GitHub, Android Studio, API</p>
+                        </div>
+                    </div>
                 </div>
-            ))}
-            </div>
+                {/* <div class="experiences">
+                    <div class="experience">
+                        <p>Flutter Developer Intern
+                        <br></br>
+                        Jul 2021 - Jan 2022
+                        </p>
+                    </div>
+                    <p class="description">
+                    Worked on a Multivendor application.<br></br>
+                    Worked on frontend and backend of pages like Product Description, Buying Preferences, Mode of Payment, a module of Home Page.<br></br>
+                    Fixed a few bugs.<br></br>
+                    <p class="tech">Dart, Flutter, Git, GitHub, Android Studio, API</p></p>
+                </div> */}
 
-            <p class="topicHeading">Achievements</p>
-            <div class="achievementCard">
-                {achievementImgs.map((item, i) => (
-                    <div onClick={() => onClickButton(achievementLinks.at(i))} >
-                        <img src={item}></img>
-                        <p>{achievementInfo.at(i)}</p>
+                <p class="topicHeading">Projects</p>
+                <div class="projects">{projectTechUsed.map((item, i) => (
+                    <div onClick={() => onClickButton(projectDemoLinks.at(i))} class="project">
+                        <div class="headingGithub">
+                                <p onClick={() => onClickButton(projectDemoLinks.at(i))} class="heading">{projectTitle.at(i)}</p>
+                                <img class="links" onClick={() => onClickButton(projectGithubLinks.at(i))} src={github}></img>
+                            </div>
+                        <img onClick={() => onClickButton(projectDemoLinks.at(i))} class="projectImg" src={projectImg.at(i)}></img>
+                        <div class="projectInfo">
+                            
+                            <div class="desc">{projectInfo.at(i)}</div>
+                            <p class="tech">{projectTechUsed.at(i).map((text) => (
+                                <p>{text}</p>
+                            ))}</p>
+                        </div>        
                     </div>
                 ))}
+                </div>
+
+                <p class="topicHeading">Achievements</p>
+                <div class="achievementCard">
+                    {achievementImgs.map((item, i) => (
+                        <div onClick={() => onClickButton(achievementLinks.at(i))} >
+                            <img src={item}></img>
+                            <p>{achievementInfo.at(i)}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

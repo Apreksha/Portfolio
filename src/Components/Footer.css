@@ -1,0 +1,49 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid #D4AF37;
+}
+
+.contactHeading{
+    display: grid;
+    font-family: subHeadingFont;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contactHeading::before, .contactHeading::after{
+    content: "";
+    height: 2px;
+    background-color: #D4AF37;
+    display: block;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;   
+}
+
+.contactBox{
+    margin-right: 50px;
+    width: auto;
+    height: 35px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    background-color: wheat;
+    display: flex;
+}
+
+.contactBox img{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.contactBox p{
+    font-size: 20px;
+    
+}

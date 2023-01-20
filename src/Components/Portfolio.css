@@ -1,10 +1,25 @@
+@font-face{
+    font-family: headingFont;
+    src: url('D:/VSCodeProjects/portfolio/src/image/milchella.ttf');
+}
+
+.portfolio{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -20px;
+}
+
 .portfolioHeading{
+    margin-left: 80px;
+    color: #D4AF37;
+    font-family: headingFont;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .topicHeading{
     font-size: 35px;
+    font-family: subHeadingFont;
     font-weight: 600;
     text-align: left;
 }
@@ -30,31 +45,76 @@
     font-size: 22px;
 }
 
+.timeline{
+    margin-right: 50px;
+}
+
+.wrapper{
+    width: 3px;
+    margin-left: 9px;
+    margin-top: 10px;
+    height: 80%;
+    background-color: white;
+}
+
+.wrapperCircle{
+    background-color: #D4AF37;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #D4AF37;
+    height: 20px;
+    width: 20px;
+}
+
+.time{
+    margin-top: -16px;
+    margin-left: 90px;
+}
+
 .experience{
-    margin-right: 20px;
+    height: auto;
+}
+
+.experience, .positionAndTime{
     display: flex;
 }
 
-.experience p{
-    margin-top: 10px;
-    margin-left: 7px;
-    font-family: cursive;
-}
-
-
-.description{
+.experiences{
+    justify-content: center;
     text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.tech{
-    color: darkblue;
+.companyInfo{
+    color: #D3D3D3;
+}
+
+.experienceCard{
+    margin-top: -20px;
+    padding-left: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.companyName{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.position{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.experienceTech{
+    color: #D4AF37;
     font-weight: bold;
     font-size: 16px;
 }
 
-.experiences{
-    border: 2px solid #D4AF37;
-}
 
 .achievementCard img{
     height: 200px;

@@ -4,11 +4,14 @@
 }
 
 .tabBar{
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
 }
 
 .tabBar p{
     margin-left: 20px;
+    font-size: 18px;
     color: white;
 }
 

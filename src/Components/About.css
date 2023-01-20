@@ -1,6 +1,22 @@
+@font-face{
+    font-family: nameFont;
+    src: url('D:/VSCodeProjects/portfolio/src/image/rise-of-kingdom.ttf');
+}
+
+@font-face{
+    font-family: subHeadingFont;
+    src: url('D:/VSCodeProjects/portfolio/src/image/mordred.ttf');
+}
+
+.about{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .name{
     font-size: 40px;
     margin-top: 15px;
+    font-family: nameFont;
     font-weight: 600;
     margin-left: 15px;
     background: linear-gradient(#AE8625, #F7EF8A);
@@ -29,7 +45,7 @@
 }
 
 .skillCard{
-    background-color: grey;
+    border: 3px solid #D4AF37;
     height: 130px;
     border-radius: 20px;
     padding-top: 20px;
@@ -44,8 +60,8 @@
 }
 
 .skillCard img{
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 75px;
 }
 
 .skills{
@@ -55,11 +71,13 @@
 
 .skillsHeading, .codingProfileHeading{
     font-size: 40px;
+    font-family: subHeadingFont;
     font-weight: 600;
 }
 
 .aboutHeading{
     text-align: left;
+    font-family: subHeadingFont;
     font-size: 40px;
     font-weight: 600;
 }
