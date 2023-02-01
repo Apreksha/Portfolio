@@ -8,6 +8,19 @@
     src: url('D:/VSCodeProjects/portfolio/src/image/mordred.ttf');
 }
 
+
+.nameAndPhoto{
+    justify-content: center;
+    display: flex;
+}
+
+
+.initialAbout{
+    height: 100%;
+    padding-top: 15%;
+    padding-right: 5%;
+}
+
 .about{
     padding-left: 100px;
     padding-right: 100px;
@@ -15,7 +28,7 @@
 
 .name{
     font-size: 40px;
-    margin-top: 15px;
+    margin-top: 25px;
     font-family: nameFont;
     font-weight: 600;
     margin-left: 15px;

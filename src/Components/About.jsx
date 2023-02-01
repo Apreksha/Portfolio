@@ -26,6 +26,7 @@ import leetcode from 'D:/VSCodeProjects/portfolio/src/image/leetcode.png';
 import hackerearth from 'D:/VSCodeProjects/portfolio/src/image/hackerearth.png';
 import hackerrank from 'D:/VSCodeProjects/portfolio/src/image/hackerrank.png';
 import gfg from 'D:/VSCodeProjects/portfolio/src/image/gfg.png';
+import apreksha from 'D:/VSCodeProjects/portfolio/src/image/Apreksha_Mathur.png';
 
 function About(){
     const onClickButton = url => {
@@ -33,7 +34,7 @@ function About(){
     };
 
     const skillImg=[c, cpp, dart, flutter, java, python, html, css, js, react, firebase, mysql, andstu, git, githubWhite];
-    const skillName=["C", "C++", "Dart", "Flutter", "Java","Python", "HTML", "CSS", "JavaScript", "React", "Firebase", "MySQL", "Android Studio", "Git", "GitHub"];
+    const skillName=["C", "C++", "Dart", "Flutter", "Java", "Python", "HTML", "CSS", "JavaScript", "React", "Firebase", "MySQL", "Android Studio", "Git", "GitHub"];
     const codingProfileImg = [github, leetcode, gfg, codechef, hackerearth, hackerrank];
     const codingProfileName = ["GitHub", "LeetCode", "GeeksforGeeks", "CodeChef", "HackerEarth", "HackerRank"];
     const codingProfileLinks = ['https://github.com/Apreksha', 'https://leetcode.com/aprekshamathur/', 'https://auth.geeksforgeeks.org/user/aprekshamathur', 'https://www.codechef.com/users/apreksha', 'https://www.hackerearth.com/@aprekshamathur456', 'https://www.hackerrank.com/aprekshamathur41']
@@ -42,16 +43,21 @@ function About(){
         <div>
             <TabBar></TabBar>
             <div class="about">
-                <div class="mynameis">
-                    <p class="im">I'm</p>
-                    <p class="name">Apreksha Mathur</p>
-                </div>
-                <div class="dev">
-                    <Typewriter options={{
-                    autoStart:true,
-                    loop: true,
-                    delay: 40,
-                    strings:["I'm a Developer."]}}/>
+                <div class="nameAndPhoto">
+                    <div class="initialAbout">
+                        <div class="mynameis">
+                            <p class="im">I'm</p>
+                            <p class="name">Apreksha Mathur </p>
+                        </div>
+                        <div class="dev">
+                            <Typewriter options={{
+                            autoStart:true,
+                            loop: true,
+                            delay: 40,
+                            strings:["I'm a Developer."]}}/>
+                        </div>
+                    </div>
+                    <img class="myPic" src={apreksha}></img>
                 </div>
                 <p class="aboutHeading">About</p>
                 <div class="About">
